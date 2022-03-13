@@ -3,3 +3,8 @@ body {
     background: pink;
     text-align: center;
 }
+
+h1.e_name {
+    color: blue;
+    font-family: "Helvetica";
+}
