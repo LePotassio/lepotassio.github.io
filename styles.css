@@ -121,11 +121,11 @@ p.end_thing {
 
 #side_img_r1 {
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 5%;
     background-size: 100px;
-    height: 250px;
-    width:250px;
+    height: 15vw;
+    width: 15vw;
     background: url("images/placeholder.jpg") no-repeat;
     background-size:contain;
     z-index: -9999;
