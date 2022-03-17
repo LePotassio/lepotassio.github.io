@@ -158,12 +158,12 @@ p.blog_description {
 
 #side_img_r1 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 5%;
     background-size: 100px;
-    height: 15vw;
-    width: 15vw;
-    background: url("images/placeholder.jpg") no-repeat;
+    height: 25vw;
+    width: 25vw;
+    background: url("images/hoarding.png") no-repeat;
     background-size:contain;
     z-index: -9999;
 }
