@@ -88,32 +88,6 @@ body.blog_info {
     z-index: 5;
 }
 
-li {
-    float: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li a {
-    display: block;
-    color: grey;
-    font-family: "Helvetica";
-    text-align: center;
-    margin: 15px 16px;
-    text-decoration: none;
-    outline-color: black;
-    outline-style: outset;
-}
-
-li a:hover {
-    text-decoration: underline;
-}
-
 /*Blog Links*/
 #blog_links a {
     color:#cfa97c;
