@@ -6,98 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles_index.css">
+        <link rel="stylesheet" href="navbar.css">
     </head>
     <body class="personal_info">
-        <div id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ramblings.html">Linear Potato</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="large_div">
-            <h1 class="e_name">Eric Furukawa</h1>
-            <p class="description">Hello there! I'm Eric. I am a recent graduate with a Bachelor's degree in computer science from Washington State University. 
-                I am deeply interested in game development and am seeking opportunities to broaden my knowledge of the software development process.<br><br><br>
-                <span class="bolded">Current Locale:</span> Greater Seattle Area<br><br>
-                <span class="bolded">Languages Most Experienced In:</span> C#, Python<br><br>
-                <span class="bolded">Languages With Some Experience:</span> C, C++, Java, HTML, CSS, Javascript, PSQL, MIPS Assembly<br><br>
-                <span class="bolded">Software:</span> Unity, Krita, Aesprite<br><br>
-                <span class="bolded">Skills:</span> Highly Adaptable, Team Player, Creative Thinking, Practical Mindset<br><br>
-                <span class="bolded">I am always willing to expand my skillset!</span><br><br>
-                <span class="bolded">Hobbies: </span>Game Development, Video Games, Digital Art, Guitar, Board & Card Games, Running & Hiking<br><br><br>
-                <a href="contact.html"><span class="bolded_link">Contact Me!</span></a></p>
-            <p class="end_thing">Let's Make Some Cool Stuff</p>
-            <!--<div id="side_img_r1"></div>-->
-            <div class="parallax">
-                <div class="parallax_layer">
-                    <div class="front_layer">
-                        <img src="images/Front.png" alt="desk placeholder" class="image_close" />
-                        <a href="ramblings.html" class="blog_button">
-                            <div class="image_blog"></div>
-                        </a>
-                        <img src="images/Blog2.png" alt="A blog ?" class="image_blog2">
-                    </div>
-                    <img src="images/Middle.png" alt="chair placeholder" class="image_middle" />
-                    <img src="images/Back.png" alt="chair placeholder" class="image_far" />
-                </div>
-                <script type="text/javascript">
-                    let front = document.getElementsByClassName("front_layer")[0];
-                    let middle = document.getElementsByClassName("image_middle")[0];
-                    let far = document.getElementsByClassName("image_far")[0];
-                    
-                    function doParallax() {
-                        var value = window.scrollY;
-                        value = Math.floor(value);
-                        let scrollHeight = Math.max(
-                            document.body.scrollHeight, document.documentElement.scrollHeight,
-                            document.body.offsetHeight, document.documentElement.offsetHeight,
-                            document.body.clientHeight, document.documentElement.clientHeight
-                        ) - innerHeight;
-                        middle.style.top = (scrollHeight - value) * .1 + 'px';
-                        front.style.top = (scrollHeight - value) * .25 + 'px';
-                    }
-
-                    window.addEventListener('scroll', doParallax);
-                    window.addEventListener('resize', doParallax);
-                    window.addEventListener('load', doParallax);
-                </Script>
+        <div class="flex-wrapper">
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
             </div>
-            <!--<script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    if (!window.AnimationEvent) {
-                        return;
-                    }
-                    var anchors = document.getElementsByTagName('a');
-                    for (var idx=0; idx<anchors.length; idx++) {
-                        if (anchors[idx].hostname !== window.location.hostname || anchors[idx].pathname === window.location.pathname) {
-                            continue;
-                        }
-                        anchors[idx].addEventListener('click', function(event) {
-                            var fader = document.getElementById('fader'),
-                            anchor = event.currentTarget;
-            
-                            var listener = function() {
-                                window.location = anchor.href;
-                                fader.removeEventListener('animationend', listener);
-                            };
-                            fader.addEventListener('animationend', listener);
-            
-                            event.preventDefault();
-                            fader.classList.add('fade-in');
-                        });
-                    }
-                });
-
-                window.addEventListener('pageshow', function (event) {
-                    if (!event.persisted) {
-                        return;
-                    }
-                    var fader = document.getElementById('fader');
-                    fader.classList.remove('fade-in');
-                });
-            </script>
-            -->
+            <div class="large_div">
+                <h1 class="e_name">Eric Furukawa</h1>
+                <p class="bio">I am a computer science master's student and game developer based in Bellevue, Washington. My love for playing video games has grown into a passion for designing and programming them using the Unity game engine. I'm eager to apply my enthusiasm for programming, critical thinking, and teamwork to create meaningful software experiences.<br><br><br></p>
+                <p class="description"><span class="info_Section_Text">Education:</span><br>BS Computer Science - Washington State University 2021<br><br></p>
+                <hr class="info_Divider">
+                <p class="description"><span class="info_Section_Text">Primary Programming Skills:</span><br>C#, Unity, .NET<br><br></p>
+                <p class="description"><span class="info_Section_Text">Secondary Programming Skills:</span><br>C, C++, Python, Java, HTML, CSS, Javascript, PostGreSQL, Git<br><br></p>
+                <p class="description"><span class="info_Section_Text">Other Technologies:</span><br>Krita, Aesprite<br><br></p>
+                <p class="description"><span class="info_Section_Text">Skills:</span><br>Highly Adaptable, Team Player, Creative Thinking, Practical Mindset<br><br></p>
+                <hr class="info_Divider">
+                <p class="description"><span class="info_Section_Text">Game Development and Play Interests: </span><br>Rogue-Like, Narrative, Puzzle, Deck-Builder, Simulation, Survival Crafting, City-Builder, Edutainment, Procedural<br><br></p>
+                <p class="description"><span class="info_Section_Text">Hobbies: </span><br>Game Development, Video Games, Digital Art, Guitar, Board & Card Games, Running & Hiking<br><br><br></p>
+            </div>
             <div id="rectangle"></div>
             <div id="bottom">
                 <p>Eric Furukawa, 2022<p>

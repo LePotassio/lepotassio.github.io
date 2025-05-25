@@ -1,0 +1,19 @@
+h1.blog_name {
+    color: #ffdaad;
+    font-family: Verdana;
+    font-size: 500%;
+    margin-top: 100px;
+    margin-left: 5%;
+    text-align: left;
+}
+
+h1.blog_post_name {
+    color: grey;
+    font-family: Verdana;
+    font-size: 200%;
+    margin-top: 1%;
+    margin-bottom: 50px;
+    margin-right: 50%;
+    margin-left: 5%;
+    text-align: left;
+}

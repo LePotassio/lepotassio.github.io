@@ -4,47 +4,6 @@
     color: darkgrey;
 }
 
-/*Animation*/
-body::-webkit-scrollbar{
-    display: none;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /*Primary Elements*/
 body {
     margin: 0;
@@ -59,12 +18,15 @@ body {
     min-height: 100vh;
 }
 
+/*
 body.contact_info {
     display: inline-block;
     position: relative;
 }
+*/
 
 .large_div {
+    flex: 1;
     max-width: 100vw;
     overflow: hidden;
     animation: fadein 1s;
@@ -73,26 +35,11 @@ body.contact_info {
     -o-animation: fadein 1s;
 }
 
-/*Navbar*/
-#navbar {
-    animation: none;
-    -moz-animation: none;
-    -webkit-animation: none;
-    -o-animation: none;
-    position: fixed;
-    width:100%;
-    height: 50px;
-    background: black;
-    position: fixed;
-    top:0;
-    z-index: 5;
-}
-
 /*Contact Content*/
 h1.contact_name {
-    color: grey;
+    color:#ffdaad;;
     font-family: Helvetica;
-    font-size: 700%;
+    font-size: 500%;
     margin-top: 100px;
     margin-bottom: 0;
     margin-left: 5%;
@@ -100,9 +47,9 @@ h1.contact_name {
 }
 
 h2.contact_header {
-    color: grey;
+    color: #dfb582;
     font-family: Helvetica;
-    font-size: 250%;
+    font-size: 200%;
     margin-top: 10px;
     margin-bottom: 0;
     margin-left: 7%;
@@ -110,9 +57,9 @@ h2.contact_header {
 }
 
 h2.link_header {
-    color: grey;
+    color: #dfb582;
     font-family: Helvetica;
-    font-size: 250%;
+    font-size: 200%;
     margin-top: 10px;
     margin-bottom: 0;
     margin-left: 7%;
@@ -152,12 +99,3 @@ p.contact_text a {
 }
 
 /*Footer*/
-
-#bottom p {
-    font-size: 15px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    z-index: 4;
-    width: 100%;
-}

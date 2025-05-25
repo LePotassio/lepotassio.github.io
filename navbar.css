@@ -1,0 +1,47 @@
+#navbar {
+    animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+    -o-animation: none;
+    position: fixed;
+    width:100%;
+    height: 50px;
+    background: black;
+    position: fixed;
+    top:0;
+    z-index: 6;
+}
+
+#navbar li {
+    float: left;
+    border: 2px solid #555;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+#navbar li:first-child {
+  border-left: 2px solid #555; /* keep left border on first tab */
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li a {
+    display: block;
+    color: grey;
+    font-family: "Helvetica";
+    text-align: center;
+    margin: 15px 16px;
+    text-decoration: none;
+    outline-color: black;
+    /*outline-style: outset;*/
+}
+
+#navbar li a:hover {
+    text-decoration: underline;
+}

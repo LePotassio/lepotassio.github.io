@@ -7,34 +7,71 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles_blog.css">
+        <link rel="stylesheet" href="navbar.css">
     </head>
     <body class="blog_info">
-        <div id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ramblings.html">Linear Potato</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="large_div">
-            <h1 class="blog_name">Linear Potato</h1>
-            <p class="blog_description">
-                Welcome to the Linear Potato blog! I may post here ocassionally about some interest tangents I travel down.<br><br>
-                Any posts here are more just for me to geek about my current interests rather than trying to reach any consistent readership, so posts may be irregular in timing and subject matter.
-            </p>
-            <div id="side_img_r1"></div>
-            <div id="blog_links">
-                <a href="blog_post_small1.html">Update Post #3: Ugly UI Warning! You Have Been Warned! - 5/19/2022</a>
+        <div class="flex-wrapper">
+            <div id="navbar">
+                <ul>
+                    <li><a href="ramblings.html">Linear Potato</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                </ul>
             </div>
-            <div id="blog_links">
-                <a href="blog_post2.html">Update Post #2: 1999 Problems But A Keyboard Ain't One - 4/5/2022</a>
+            <div class="large_div">
+                <h1 class="blog_name">Linear Potato</h1>
+                <p class="blog_description">
+                    Welcome to the Linear Potato blog! This hosts infrequent devblogs for my games and interests. My focus has shifted toward putting more effort into developing games and completing schoolwork than posting here.<br><br>
+                </p>
+                <div id="side_img_r1"></div>
+                <div id="blog_links">
+                    <a href="blogposts\blog_post_small1.html">Update Post #3: Ugly UI Warning! You Have Been Warned! - 5/19/2022</a>
+                </div>
+                <div id="blog_links">
+                    <a href="blogposts\blog_post2.html">Update Post #2: 1999 Problems But A Keyboard Ain't One - 4/5/2022</a>
+                </div>
+                <div id="blog_links">
+                    <a href="blogposts\blog_post_dev1.html">Game Dev Post #1: Prototype Graveyard: A Post Mortem - 3/23/2022</a>
+                </div>
+                <div id="blog_links">
+                    <a href="blogposts\blog_post1.html">Update Post #1: Linear Potato Launcher - 3/16/2022</a>
+                </div>
             </div>
-            <div id="blog_links">
-                <a href="blog_post_dev1.html">Game Dev Post #1: Prototype Graveyard: A Post Mortem - 3/23/2022</a>
+
+            <div class="parallax">
+                <div class="parallax_layer">
+                    <div class="front_layer">
+                        <img src="images/Front.png" alt="desk placeholder" class="image_close" />
+                        <a href="ramblings.html" class="blog_button">
+                            <div class="image_blog"></div>
+                        </a>
+                        <img src="images/Blog2.png" alt="A blog ?" class="image_blog2">
+                    </div>
+                    <img src="images/Middle.png" alt="chair placeholder" class="image_middle" />
+                    <img src="images/Back.png" alt="chair placeholder" class="image_far" />
+                </div>
+                <script type="text/javascript">
+                    let front = document.getElementsByClassName("front_layer")[0];
+                    let middle = document.getElementsByClassName("image_middle")[0];
+                    let far = document.getElementsByClassName("image_far")[0];
+                    
+                    function doParallax() {
+                        var value = window.scrollY;
+                        value = Math.floor(value);
+                        let scrollHeight = Math.max(
+                            document.body.scrollHeight, document.documentElement.scrollHeight,
+                            document.body.offsetHeight, document.documentElement.offsetHeight,
+                            document.body.clientHeight, document.documentElement.clientHeight
+                        ) - innerHeight;
+                        middle.style.top = (scrollHeight - value) * .1 + 'px';
+                        front.style.top = (scrollHeight - value) * .25 + 'px';
+                    }
+
+                    window.addEventListener('scroll', doParallax);
+                    window.addEventListener('resize', doParallax);
+                    window.addEventListener('load', doParallax);
+                </Script>
             </div>
-            <div id="blog_links">
-                <a href="blog_post1.html">Update Post #1: Linear Potato Launcher - 3/16/2022</a>
-            </div>
+            <div id="rectangle"></div> 
             <div id="bottom">
                 <p>Eric Furukawa, 2022<p>
             </div>

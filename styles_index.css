@@ -1,4 +1,24 @@
-/*Primary Elements*/
+/*Texts*/
+.info_Section_Text {
+    font-weight: bold;
+    color:#dfb582;;
+}
+
+.far {
+    width: 100%;
+    height: auto;
+}
+
+h1.e_name {
+    color: #ffdaad;
+    font-family: "Helvetica";
+    font-size: 500%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    text-align: left;
+}
+
 body {
     margin: 0;
     background: black;
@@ -7,90 +27,98 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     position: relative;
-    width: 100vw;
+    width:100vw;
     height: 100vh + scrollHeight;
-    min-height: 100vh;
 }
 
-body.blog_info {
-    display: inline-block;
-    position: relative;
+p.bio {
+    color:#c9beb1;
+    max-width: 80%;
+    font-size: 150%;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 100px;
 }
 
-/*Blog Links*/
-#blog_links a {
-    color:#cfa97c;
-    font-weight: bold;
+p.description {
+    color:#c9beb1;
+    max-width: 50%;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+p.description a {
+    color: #cfa97c;
     text-decoration: none;
 }
 
-/*unvisited*/
-#blog_links a:link {
-    color:#cfa97c;
-}
-
-/*mouse over*/
-#blog_links a:hover {
+p.description a:hover {
+    color: #cfa97c;
     text-decoration: underline;
 }
 
-/*selected*/
-#blog_links a:active {
-    color: lightgrey;
-}
-
-/*Blog Content*/
-h1.blog_name {
-    color: #ffdaad;
-    font-family: Verdana;
-    font-size: 500%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 5%;
-    text-align: left;
-}
-
-p.blog_description {
-    color:#c9beb1;;
-    max-width: 50%;
-    font-size: 200%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    text-align: left;
+p.end_thing {
+    position:absolute;
+    font-size: 300%;
+    margin-top: -10px;
+    left: 0;
+    right: 0;
+    color: #c9beb1;
 }
 
 #side_img_r1 {
     position: absolute;
-    top: 30%;
-    right: 2%;
+    top: 15%;
+    right: 5%;
     background-size: 100px;
-    height: 25vw;
-    width: 25vw;
-    background: url("images/hoarding.png") no-repeat;
+    height: 15vw;
+    width: 15vw;
+    background: url("images/placeholder.jpg") no-repeat;
     background-size:contain;
     z-index: -9999;
 }
 
-#blog_links {
-    max-width: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+body.personal_info {
+    display: inline-block;
+    position: relative;
 }
 
-#blog_links a {
-    font-size: 200%;
+hr.info_Divider {
+    border: none;
+    height: 4px;
+    background-color: #7e7e7e;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 3px;
 }
 
+/*/
+.programmingSkills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    padding-left: 1.5em;
+    max-width: 50%; 
+    list-style-position: inside;
+}
 
+.programmingSkills li {
+    font-size: 150%;
+    color:#c9beb1;
+    list-style-type: disc;
+    display: list-item;
+}*/
+
+/*Parallax*/
 .parallax {
     position: relative;
     max-width: 100%;
     overflow: visible;
     flex-shrink: 0;
+    height: 120vh;
 }
 
 .image_close {
@@ -163,11 +191,13 @@ p.blog_description {
     height: 100px;
 }
 
-/*Footer*/
-
 #rectangle {
     width:100%;
     height: 50px;
     background: black;
-    margin-top: 59vw; /*Incredibly important hack for detting to rest after absolutes*/
+    margin-top: 2vw;
+}
+
+#bottom {
+    height: 100%;
 }
